@@ -1,0 +1,11 @@
+<h1>Results:</h1>
+<table class="table">
+  <% unless @counts.nil? %>
+  <% @counts.each do |k, v| %>
+    <tr>
+      <td><%= k %></td>
+      <td><%= v %></td>
+    </tr>
+  <% end %>
+<% end %>
+</table>
